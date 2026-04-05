@@ -1,0 +1,10 @@
+# Ignore executable files
+*.exe
+
+# Ignore CSV files
+*.csv
+
+# Ignore temporary files
+*.o
+*.obj
+*.log
