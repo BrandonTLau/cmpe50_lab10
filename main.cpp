@@ -196,7 +196,7 @@ void update_employee() {
             }
 
             cout << "Employee updated successfully.\n";
-            save_csv("employees.csv"); // save after update
+            save_csv("employees.csv"); 
             break;
         }
     }
@@ -218,7 +218,7 @@ void print_employee_check() {
 
     for (int i = 0; i < employees.size(); ++i) {
         if (employees[i]->get_ssn() == ssn) {
-            employees[i]->print_check();  // polymorphic call
+            employees[i]->print_check();  
             return;
         }
     }
@@ -244,7 +244,7 @@ int main() {
         cout << "2. View Employees\n";
         cout << "3. Delete Employee\n";
         cout << "4. Update/Edit Employee\n";
-        cout << "5. Print Paycheck\n";   // new menu option
+        cout << "5. Print Paycheck\n";   
         cout << "6. Exit\n";
         cout << "Choice: "; 
         cin >> choice; 
@@ -264,7 +264,7 @@ int main() {
                 update_employee(); 
                 break;
             case 5: 
-                print_employee_check();   // call to new paycheck function
+                print_employee_check();   
                 break;
             case 6: 
                 cout << "Exiting...\n"; 
